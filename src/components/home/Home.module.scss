@@ -1,0 +1,30 @@
+$home-asset-logo: './assets/home_logo.png';
+
+$home-over-buttons-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$home-over-buttons-text-color: #3a423c;
+
+.home {
+  text-align: center;
+}
+
+.home_logo {
+  background-image: url($home-asset-logo);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  font-size: 0px;
+  display: block;
+}
+
+.home_button {
+  font-family: $home-over-buttons-font-family;
+  color: $home-over-buttons-text-color;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 3px;
+
+  &:hover {
+    box-shadow: 0 1px 20px royalblue
+  }
+}

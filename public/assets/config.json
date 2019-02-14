@@ -1,0 +1,4 @@
+{
+  "API_GATEWAY": "http://localhost:9000",
+  "DEEPSTREAM": "ws://localhost:3060"
+}

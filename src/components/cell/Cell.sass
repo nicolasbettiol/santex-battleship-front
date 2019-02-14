@@ -1,0 +1,26 @@
+$unchecked-cell-background-color: #90A6C1
+$miss-cell-background-color: #eff2e6
+$hitted-cell-background-color: #60C14F
+$sunked-cell-background-color: #ff0000
+
+.cell
+  width: 100%
+  height: 100%
+  display: block
+  padding: 20px
+
+  &:hover
+    box-shadow: 0 1px 8px black
+    opacity: 0.85
+
+  &.unchecked
+    background-color: $unchecked-cell-background-color
+
+  &.miss
+    background-color: $miss-cell-background-color
+
+  &.hitted
+    background-color: $hitted-cell-background-color
+
+  &.sunked
+    background-color: $sunked-cell-background-color

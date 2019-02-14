@@ -1,0 +1,26 @@
+$board-elements-background-color: #90A6C1
+
+.board
+  text-align: center
+
+  &_turns_counter
+    margin: 10px
+
+    h3
+      margin: 0px
+
+  &_elements
+    display: inline-grid
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto
+    background-color: $board-elements-background-color
+    padding: 10px
+    border: 2px
+
+  &_element
+    width: 50px
+    height: 50px
+    background-color: rgba(255, 255, 255, 0.7)
+    border: 1px solid rgba(0, 0, 0, 0.8)
+    padding: 3px
+    font-size: 30px
+    text-align: center

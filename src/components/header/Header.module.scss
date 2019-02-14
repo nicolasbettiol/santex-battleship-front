@@ -1,0 +1,64 @@
+$header-background-color: #c3ccc6;
+$header-border-color: #919993;
+$header-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+
+$header-buttons-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$header-buttons-text-color: #3a423c;
+
+$header-asset-logo: './assets/battleship.png';
+
+.header {
+  background-color: $header-background-color;
+  border-bottom: 2px solid $header-border-color;
+  font-family: $header-font-family;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.header_logo{
+  background-image: url($header-asset-logo);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 64px;
+  width: 64px;
+  font-size: 0;
+  display: block;
+
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+.header_options{
+  display: flex;
+  flex-direction: row;
+}
+
+.header_buttons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  li {
+    padding-right: 5px;
+  }
+}
+
+.header_button {
+  font-family: $header-buttons-font-family;
+  color: $header-buttons-text-color;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px;
+
+
+  &:hover{
+    box-shadow: 0 1px 8px black;
+  }
+}
